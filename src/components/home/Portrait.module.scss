@@ -1,5 +1,42 @@
 .portrait {
     width: 50%;
-    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5b6f6;
     border: 2px solid #000000;
+}
+
+.card {
+    position: relative;
+    width: 520px;
+    height: 555px;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    background-color: #a4f3de;
+    border: 3px solid #000000;
+    box-shadow: -5px 5px #000000;
+}
+
+.card__image {
+    position: absolute;
+    left: 14%;
+    top: 50px;
+    width: 360px;
+    height: 376px;
+    border: 3px solid #000000;
+}
+
+.card__container {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    padding: 2px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    background-color: #ef81a4;
+    box-shadow: -3px 3px #767373;
 }

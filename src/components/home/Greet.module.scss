@@ -1,8 +1,9 @@
 .greet {
     width: 50%;
+    padding-left: 25px;    
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    // justify-content: space-evenly;
     background-color: #e8ffa8;
     border: 2px solid #000000;
 }
@@ -13,7 +14,7 @@
 }
 
 .header {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     font-family: 'JetBrains Mono', monospace;
     font-style: normal;
     font-weight: 800;
@@ -26,14 +27,14 @@
     font-style: normal;
     font-weight: 400;
     font-size: 47px;
-    line-height: 59px;
+    line-height: 70px;
 }
 
 .badge {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 580px;
+    width: 520px;
     height: 220px;
     padding: 20px;
     padding-left: 80px;
