@@ -25,7 +25,6 @@ const LogosList: React.FC<LogosListProps> = props => {
     return (
         <section className={styles['logos-list']}>
             <ul className={styles['logos-list__list']}>
-                {/* 123 */}
                 {renderLogos()}
             </ul>
         </section>
