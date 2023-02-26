@@ -34,19 +34,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 520px;
+    width: 525px;
     height: 220px;
     padding: 20px;
     padding-left: 80px;
+    transform: rotate(-9.2deg);
+    border-radius: 50%;
+    border: 3px solid #000000;
+    background-color: #7901f1;
+    box-shadow: 25px 35px #000000;
+}
+
+.badge__text {
     font-family: 'JetBrains Mono', monospace;
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 50px;
     color: #ffffff;
-    transform: rotate(-9.2deg);
-    border-radius: 50%;
-    border: 3px solid #000000;
-    background-color: #7901f1;
-    box-shadow: 25px 35px #000000;
+    &_small {
+        font-size: 14px;
+    }
 }

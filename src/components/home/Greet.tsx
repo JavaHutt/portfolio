@@ -9,9 +9,12 @@ const Greet: React.FC = () => (
         </div>
         <div>
             <div className={styles.badge}>
-                <p>Backend Developer</p>
-                <p>&</p>
-                <p>Frontend Developer</p>
+                <p className={styles.badge__text}>Backend Developer</p>
+                <p className={styles.badge__text}>&</p>
+                <p className={styles.badge__text}>
+                    Frontend Developer
+                    <span className={`${styles.badge__text} ${styles.badge__text_small}`}> (a little...)</span>
+                </p>
             </div>
         </div>
     </section>
