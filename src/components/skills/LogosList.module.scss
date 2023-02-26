@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.logos-list {
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: $secondary;
+}
+
+.logos-list__list {
+    width: 90%;
+}
