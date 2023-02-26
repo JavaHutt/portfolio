@@ -40,3 +40,28 @@
     background-color: #ef81a4;
     box-shadow: -3px 3px #767373;
 }
+
+.card__sticker {
+    position: absolute;
+    &_first {
+        left: -105px;
+        top: -105px;
+        width: 220px;
+        height: 180px;
+        transform: rotate(20deg);
+    }
+    &_second {
+        right: -65px;
+        top: 10%;
+        width: 130px;
+        height: 130px;
+        transform: rotate(20deg);
+    }
+    &_third {
+        left: -57px;
+        bottom: -8%;
+        width: 248px;
+        height: 130px;
+        transform: rotate(-15deg);
+    }
+}
