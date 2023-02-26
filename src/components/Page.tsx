@@ -4,8 +4,12 @@ import Home from './home/Home';
 const Page: React.FC = () => {
     return (
         <>
-            <Menu />
-            <Home />
+            <header>
+                <Menu />                
+            </header>
+            <main>
+                <Home />
+            </main>
         </>
     );
 };
