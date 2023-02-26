@@ -1,9 +1,11 @@
+@import '../../styles/colors.scss';
+
 .portrait {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5b6f6;
+    background-color: $secondary;
     border: 2px solid #000000;
 }
 
@@ -13,7 +15,7 @@
     height: 555px;
     padding: 60px 50px;
     box-sizing: border-box;
-    background-color: #a4f3de;
+    background-color: $tertiary;
     border: 3px solid #000000;
     box-shadow: -5px 5px #000000;
 }

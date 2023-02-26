@@ -1,0 +1,12 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.skills__item {
+    width: 50%;
+    height: 45vh;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}

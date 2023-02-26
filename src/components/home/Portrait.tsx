@@ -1,8 +1,8 @@
 import styles from './Portrait.module.scss';
 import photo from '../../assets/photo.jpg';
-import diamond from '../../assets/diamond.gif';
-import duck from '../../assets/duck.png';
-import scorpion from '../../assets/scorpion.png';
+import diamond from '../../assets/stickers/diamond.gif';
+import duck from '../../assets/stickers/duck.png';
+import scorpion from '../../assets/stickers/scorpion.png';
 
 const Portrait: React.FC = () => (
     <section className={styles.portrait}>

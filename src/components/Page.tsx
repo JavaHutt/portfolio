@@ -2,11 +2,17 @@ import styles from './Page.module.scss';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './home/Home';
 import Skills from './skills/Skills';
-import Projects from './projects/projects';
-import Contact from './contact/contact';
+import Projects from './projects/Projects';
+import Contact from './contact/Contact';
+
+interface route {
+    path: string,
+    label: string,
+    element: JSX.Element,
+}
 
 const Page: React.FC = () => {
-    const routes: { path: string, label: string, element: JSX.Element }[] = [
+    const routes: Array<route> = [
         {
             path: '/',
             label: 'Home',
@@ -14,7 +20,7 @@ const Page: React.FC = () => {
         },
         {
             path: '/skills',
-            label: 'My skills',
+            label: 'My Skills',
             element: <Skills />,
         },
         {
@@ -29,22 +35,26 @@ const Page: React.FC = () => {
         },
     ];
 
-    const getNavLink = (path: string, label: string) => <Link className={styles.list__link} to={path}>{label}</Link>;
-    const getRoute = (path: string, element: JSX.Element) => <Route path={path} element={element} />;
+    const getNavLink = (path: string, label: string) => <Link key={path} className={styles.list__link} to={path}>{label}</Link>;
+    const getRoute = (path: string, element: JSX.Element) => <Route key={path} path={path} element={element} />;
 
     const renderNavLinks = () => routes.map(route => getNavLink(route.path, route.label));
     const renderRoutes = () => routes.map(route => getRoute(route.path, route.element));
 
     return (
         <Router>
-            <nav className={styles.nav}>
-                <ul className={styles.list}>
-                    {renderNavLinks()}
-                </ul>
-            </nav>
-            <Routes>
-                {renderRoutes()}
-            </Routes>
+            <header>
+                <nav className={styles.nav}>
+                    <ul className={styles.list}>
+                        {renderNavLinks()}
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <Routes>
+                    {renderRoutes()}
+                </Routes>
+            </main>
         </Router>
     );
 };
