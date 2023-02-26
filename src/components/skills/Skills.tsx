@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
     const backendLogos = [
         {
             name: golang,
-            width: '200px',
+            width: '220px',
             height: '140px',
         },
         {
@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
         },
         {
             name: aws,
-            width: '140px',
+            width: '150px',
             height: '110px',
         },
         {

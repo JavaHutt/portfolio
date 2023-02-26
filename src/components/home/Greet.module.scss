@@ -1,4 +1,5 @@
 @import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
 
 .greet {
     width: 50%;
@@ -25,7 +26,7 @@
 }
 
 .bio {
-    font-family: 'Jua', sans-serif;
+    font-family: $jua;
     font-style: normal;
     font-weight: 400;
     font-size: 47px;

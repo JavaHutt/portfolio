@@ -35,7 +35,8 @@ const Page: React.FC = () => {
         },
     ];
 
-    const getNavLink = (path: string, label: string) => <Link key={path} className={styles.list__link} to={path}>{label}</Link>;
+    const getNavLink = (path: string, label: string) =>
+        <Link key={path} className={styles.list__link} to={path}>{label}</Link>;
     const getRoute = (path: string, element: JSX.Element) => <Route key={path} path={path} element={element} />;
 
     const renderNavLinks = () => routes.map(route => getNavLink(route.path, route.label));
