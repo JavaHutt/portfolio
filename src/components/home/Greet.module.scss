@@ -1,0 +1,51 @@
+.greet {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    background-color: #e8ffa8;
+    border: 2px solid #000000;
+}
+
+.text {
+    width: 80%;
+    margin: 50px auto 0 auto;
+}
+
+.header {
+    margin-bottom: 100px;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 7rem;
+    line-height: 158px;
+}
+
+.bio {
+    font-family: 'Jua', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 59px;
+}
+
+.badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 580px;
+    height: 220px;
+    padding: 20px;
+    padding-left: 80px;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    color: #ffffff;
+    transform: rotate(-9.2deg);
+    border-radius: 50%;
+    border: 3px solid #000000;
+    background-color: #7901f1;
+    box-shadow: 25px 35px #000000;
+}
