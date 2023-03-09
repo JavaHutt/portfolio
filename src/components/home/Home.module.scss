@@ -1,5 +1,10 @@
+@import '../../styles/breakpoints.scss';
+
 .home {
-    height: 90vh;
+    max-height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media (min-width: $medium) {
+        flex-direction: row;
+    }
 }

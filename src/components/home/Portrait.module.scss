@@ -1,13 +1,17 @@
 @import '../../styles/colors.scss';
 @import '../../styles/fonts.scss';
+@import '../../styles/breakpoints.scss';
 
 .portrait {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $secondary;
     border: 2px solid #000000;
+    @media (min-width: $medium) {
+        width: 50%;
+    }
 }
 
 .card {
@@ -47,11 +51,15 @@
 .card__sticker {
     position: absolute;
     &_first {
+        display: none;
         left: -105px;
         top: -105px;
         width: 220px;
         height: 180px;
         transform: rotate(20deg);
+        @media (min-width: $large) {
+            display: block;
+        }
     }
     &_second {
         right: -65px;
@@ -61,10 +69,14 @@
         transform: rotate(20deg);
     }
     &_third {
+        display: none;
         left: -57px;
         bottom: -8%;
         width: 248px;
         height: 130px;
         transform: rotate(-15deg);
+        @media (min-width: $large) {
+            display: block;
+        }
     }
 }
