@@ -1,4 +1,5 @@
 import styles from './Greet.module.scss';
+import pikachu from '../../assets/pikachu.gif';
 
 const Greet: React.FC = () => (
     <section className={styles.greet}>
@@ -15,6 +16,7 @@ const Greet: React.FC = () => (
                     Frontend Developer
                     <span className={`${styles.badge__text} ${styles.badge__text_small}`}> (a little...)</span>
                 </p>
+                <img className={styles.badge__image} src={pikachu} alt="pikachu" />
             </div>
         </div>
     </section>

@@ -18,7 +18,7 @@
 
 .header {
     margin-bottom: 80px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: $mono;
     font-style: normal;
     font-weight: 800;
     font-size: 7rem;
@@ -34,6 +34,7 @@
 }
 
 .badge {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +50,7 @@
 }
 
 .badge__text {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: $mono;
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
@@ -58,4 +59,12 @@
     &_small {
         font-size: 14px;
     }
+}
+
+.badge__image {
+    position: absolute;
+    width: 110px;
+    height: 130px;
+    top: -80px;
+    right: 80px;
 }

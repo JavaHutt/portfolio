@@ -26,26 +26,31 @@ const Skills: React.FC = () => {
             name: golang,
             width: '220px',
             height: '140px',
+            alt: 'golang',
         },
         {
             name: postgres,
             width: '140px',
             height: '150px',
+            alt: 'postgres',
         },
         {
             name: aws,
             width: '150px',
             height: '110px',
+            alt: 'aws',
         },
         {
             name: docker,
             width: '180px',
             height: '150px',
+            alt: 'docker',
         },
         {
             name: kafka,
             width: '240px',
             height: '130px',
+            alt: 'kafka',
         },
     ];
 
@@ -54,16 +59,19 @@ const Skills: React.FC = () => {
             name: react,
             width: '160px',
             height: '150px',
+            alt: 'react',
         },
         {
             name: redux,
             width: '160px',
             height: '150px',
+            alt: 'redux',
         },
         {
             name: angular,
             width: '150px',
             height: '150px',
+            alt: 'angular',
         },
     ];
 

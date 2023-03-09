@@ -4,7 +4,8 @@ interface LogosListProps {
     logos: {
         name: string;
         width: string;
-        height: string;        
+        height: string;
+        alt: string;
     }[];
 }
 
@@ -18,7 +19,8 @@ const LogosList: React.FC<LogosListProps> = props => {
                 width={item.width}
                 height={item.height}
                 className={styles.logo}
-                src={item.name} alt={item.name}
+                src={item.name}
+                alt={item.alt}
             />
         );
 
