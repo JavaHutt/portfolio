@@ -1,5 +1,6 @@
 @import '../../styles/colors.scss';
 @import '../../styles/fonts.scss';
+@import '../../styles/breakpoints.scss';
 
 .skills-list {
     height: 100%;
@@ -14,15 +15,29 @@
     font-family: $mono;
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 66px;
+    @media (min-width: $medium) {
+        font-size: 40px;
+    }
+    @media (min-width: $large) {
+        font-size: 50px;
+    }
 }
 
 .text {
     font-family: $mono;
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 30px;
     list-style-type: '✨';
+    @media (min-width: $medium) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @media (min-width: $large) {
+        font-size: 35px;
+        line-height: 50px;
+    }
 }

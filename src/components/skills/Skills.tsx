@@ -80,10 +80,10 @@ const Skills: React.FC = () => {
             <div className={styles.skills__item}>
                 <SkillsList title={backendSkills.title} list={backendSkills.skills} />
             </div>
-            <div className={styles.skills__item}>
+            <div className={`${styles.skills__item} ${styles.skills__item_logo}`}>
                 <LogosList logos={backendLogos} />
             </div>
-            <div className={styles.skills__item}>
+            <div className={`${styles.skills__item} ${styles.skills__item_logo}`}>
                 <LogosList logos={frontendLogos} />
             </div>
             <div className={styles.skills__item}>
