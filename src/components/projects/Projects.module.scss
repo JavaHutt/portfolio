@@ -1,0 +1,9 @@
+@import '../../styles/colors.scss';
+
+.projects {
+    min-height: 90vh;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+}
